@@ -54,7 +54,7 @@ public class Main {
 	private static final boolean CREATE_PREVIEWS = true;
 
 	public static void main(String[] args) throws Throwable {
-		if(args.length <= 2) {
+		if(args.length < 2) {
 			System.out.println("Usage:" + Main.class.getName() + " <detector class> <video file>");
 			System.exit(1);
 		}

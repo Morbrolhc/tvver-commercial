@@ -16,6 +16,7 @@ public class EDLFile extends AbstractDetector {
 	
 	@Override
 	public long detect(URLVideoSource videoSource, List<Segment> result) throws Throwable {
+		super.detect(videoSource, result);
 		long before = System.nanoTime();
 		File edl   = new File(getBaseName() + ".edl");
 		Scanner in = new Scanner(new FileReader(edl));
