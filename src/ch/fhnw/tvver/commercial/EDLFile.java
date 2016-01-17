@@ -40,7 +40,7 @@ public class EDLFile extends AbstractDetector {
 					time = end;
 				}
 			}
-			double duration = videoSource.getLengthInSeconds(); 
+			double duration = videoSource.getLengthInSeconds();
 			if(duration > end)
 				result.add(new Segment(end, duration - end, false));
 		} catch(Throwable t) {

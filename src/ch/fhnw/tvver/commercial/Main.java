@@ -59,6 +59,7 @@ public class Main {
 			System.exit(1);
 		}
 
+		System.out.println(args[1]);
 		// Create detector
 		URLVideoSource   video    = new URLVideoSource(new File(args[1]).toURI().toURL(), 1);
 		AbstractDetector detector = (AbstractDetector) Class.forName(Main.class.getPackage().getName() + "." + args[0]).newInstance();

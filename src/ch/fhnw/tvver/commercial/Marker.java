@@ -32,12 +32,12 @@ public class Marker extends AbstractDetector {
 	private       double     start;
 	private final FloatFrame corner = new FloatFrame(80, 40);
 	private       File       storge;
-	
+
 	@Override
 	protected void init(URLVideoSource videoSource, File storageDirectory, boolean training) {
 		this.storge = storageDirectory;
 	}
-	
+
 	/**
 	 * Process a video frame
 	 * @param videoFrame The video frame to process.
@@ -93,7 +93,7 @@ public class Marker extends AbstractDetector {
 
 	/**
 	 * Add a segment to the result list
-	 * 
+	 *
 	 * @param time The current frame time.
 	 * @param result The result list where the segment will be added.
 	 */
@@ -120,7 +120,7 @@ public class Marker extends AbstractDetector {
 
 	/**
 	 * Create a histogram of a float image.
-	 * 
+	 *
 	 * @param frame
 	 * @param size
 	 * @return

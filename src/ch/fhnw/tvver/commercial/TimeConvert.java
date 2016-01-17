@@ -32,7 +32,7 @@ public class TimeConvert {
 		inputUI.addKeyListener(new KeyListener() {
 			@Override public void keyTyped(KeyEvent e)    {keyPressed(e);}
 			@Override public void keyReleased(KeyEvent e) {keyPressed(e);}
-			
+
 			@Override
 			public void keyPressed(KeyEvent e) {
 				try {
