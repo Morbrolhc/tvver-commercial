@@ -168,6 +168,7 @@ public class CommercialDetector extends AbstractDetector {
 					} catch (IOException e) {
 						e.printStackTrace();
 					}
+					System.exit(0);
 				}
 			}
 		}
@@ -181,7 +182,7 @@ public class CommercialDetector extends AbstractDetector {
                     commercialFrames.add(frameCounter);
 				}
 			}
-            if( (frameCounter % 50000) <=0 || videoFrame.isLast() ) {
+            if( videoFrame.isLast() ) {
 				// do some post-processing on segments here
 				int commercialCounter = 0;
                 int startCommercial = commercialFrames.get(0);
